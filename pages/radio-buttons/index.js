@@ -30,7 +30,7 @@ export default function RadioButtons() {
 }
 
 export async function getServerSideProps() {
-  let result = await fetch('http://localhost:3000/api/HeaderData')
+  let result = await fetch('https://test-next-deploy-seven.vercel.app/api/HeaderData')
   const data = await result.json();
   let {info,components,modules}=data;
 
